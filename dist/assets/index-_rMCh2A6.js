@@ -1,80 +1,4 @@
-const dict = {
-  en: {
-    nav_brand: "WESTERWELLE 2070",
-    nav_record: "Track Record",
-    nav_platform: "Platform",
-    nav_events: "Events",
-    nav_about: "Dossier",
-    nav_join: "Volunteer",
-
-    home_hero: "WESTERWELLE<br/>FOR GOVERNOR",
-    home_sub: "/// WESTERWELLE OFFICIAL CAMPAIGN",
-    home_p1: "Montiablo is the economic engine of our nation, home to innovators, small businesses, and major financial institutions. Our citizens are currently held back by a sluggish and unaccountable bureaucracy that stifles growth and punishes enterprise.",
-    home_p2: "A governors true power lies in ensuring the government works efficiently for the people. We are running to restore accountability, protect civil liberties, and ensure that Montiablo remains a place where hard work is rewarded.",
-    home_btn_primary: "Endorse",
-    home_btn_secondary: "Read Platform",
-
-    plat_title: "The FDP Mandate",
-    plat_0_h: "Fiscal Discipline",
-    plat_0_p: "Montiablo deserves a government that lives within its means. We will introduce zero new taxes, fees, or levies. Piling debt onto future generations is fundamentally unjust and we commit to balancing the budget.",
-    plat_1_h: "Streamlined Bureaucracy",
-    plat_1_p: "Starting a business must be a straightforward opportunity. We will remove all unnecessary administrative hurdles and guarantee a thirty-day maximum turnaround for standard business permits. If the administration fails to meet this deadline, the permit will be granted automatically.",
-    plat_2_h: "Uncompromising Transparency",
-    plat_2_p: "Government operates best in the light. We will install live permit processing queue screens in all public administration halls and publish real-time figures online every month. The administration will be held directly accountable to the public for its performance.",
-    plat_3_h: "Civil Liberties and Privacy",
-    plat_3_p: "A free society requires strict boundaries on government surveillance. We will block any municipal program that collects blanket citizen data without a transparent purpose, a strict end date, and rigorous independent oversight.",
-    plat_4_h: "Economic Empowerment",
-    plat_4_p: "Hard work must be rewarded. While income tax remains a federal issue, we will use every tool at our disposal to advocate for significant relief for middle-income earners. The wealth generated in Montiablo belongs to the people who create it.",
-    plat_5_h: "Efficient Core Services",
-    plat_5_p: "We will ensure that rigorous reviews for safety, health, and environmental standards remain intact while stripping away redundant red tape. Our administration will focus entirely on delivering essential services efficiently and effectively.",
-
-    record_title: "Campaign Priorities",
-    record_0_h: "Balancing the Budget",
-    record_0_p: "Montiablo deserves a government that lives within its means. We will introduce zero new taxes, fees, or levies. Piling debt onto future generations is fundamentally unjust and we commit to balancing the budget.",
-    record_1_h: "Cutting Red Tape",
-    record_1_p: "Starting a business must be a straightforward opportunity. We will remove all unnecessary administrative hurdles and guarantee a thirty-day maximum turnaround for standard business permits. If the administration fails to meet this deadline, the permit will be granted automatically.",
-    record_2_h: "Public Accountability",
-    record_2_p: "Government operates best in the light. We will install live permit processing queue screens in all public administration halls and publish real-time figures online every month. The administration will be held directly accountable to the public for its performance.",
-    record_3_h: "Protecting Privacy",
-    record_3_p: "A free society requires strict boundaries on government surveillance. We will block any municipal program that collects blanket citizen data without a transparent purpose, a strict end date, and rigorous independent oversight.",
-    record_4_h: "Rewarding Enterprise",
-    record_4_p: "Hard work must be rewarded. While income tax remains a federal issue, we will use every tool at our disposal to advocate for significant relief for middle-income earners. The wealth generated in Montiablo belongs to the people who create it.",
-    record_5_h: "Focused Administration",
-    record_5_p: "We will ensure that rigorous reviews for safety, health, and environmental standards remain intact while stripping away redundant red tape. Our administration will focus entirely on delivering essential services efficiently and effectively.",
-    record_6_h: "Restoring Trust",
-    record_6_p: "A governors true power lies in ensuring the government works efficiently for the people. We are running to restore accountability, protect civil liberties, and ensure that Montiablo remains a place where hard work is rewarded.",
-
-    events_title: "Official Schedule",
-    events_1_date: "SEP 12",
-    events_1_h: "Montiablo Chamber of Commerce",
-    events_1_p: "Guido Westerwelle outlines his plan to streamline business permits and cut red tape for local entrepreneurs.",
-    events_2_date: "SEP 18",
-    events_2_h: "Townhall on Civic Transparency",
-    events_2_p: "A public forum discussing new measures for holding the administration accountable and displaying real-time metrics.",
-    events_3_date: "OCT 05",
-    events_3_h: "Rally for Economic Empowerment",
-    events_3_p: "Join us as we campaign for middle-income tax relief and fiscal responsibility in Montiablo.",
-
-    about_title: "Candidate Dossier",
-    about_h: "A Vision for Montiablo",
-    about_p1: "Guido Westerwelle has spent his career fighting for a government that serves its people efficiently. He believes that the true measure of our capital is found in the success of its small businesses and the freedom of its citizens.",
-    about_p2: "His campaign is built on the fundamental principle that government should be transparent, accountable, and limited in its interference. He envisions a Montiablo where hard work is rewarded and civil liberties are fiercely protected.",
-    about_p3: "With a commitment to zero new taxes and a thirty-day guarantee on business permits, Westerwelle is prepared to bring real reform to the governors office.",
-    about_p4: "FDP Official Campaign Dossier",
-
-    join_title: "Get Involved Today",
-    join_sub: "Join the movement to restore efficiency and freedom in Montiablo.",
-    join_p: "Whether you want to knock on doors, make phone calls, or help organize local events, your effort will directly impact our success.",
-    join_name: "Full Name",
-    join_email: "Email Address",
-    join_affil: "Local Affiliation (Optional)",
-    join_btn: "Sign Up"
-  }
-};
-
-let currentLang = 'en';
-
-const shellHTML = `
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))s(t);new MutationObserver(t=>{for(const i of t)if(i.type==="childList")for(const r of i.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&s(r)}).observe(document,{childList:!0,subtree:!0});function n(t){const i={};return t.integrity&&(i.integrity=t.integrity),t.referrerPolicy&&(i.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?i.credentials="include":t.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function s(t){if(t.ep)return;t.ep=!0;const i=n(t);fetch(t.href,i)}})();const p={en:{nav_brand:"WESTERWELLE 2070",nav_record:"Track Record",nav_platform:"Platform",nav_events:"Events",nav_about:"Dossier",nav_join:"Volunteer",home_hero:"WESTERWELLE<br/>FOR GOVERNOR",home_sub:"/// WESTERWELLE OFFICIAL CAMPAIGN",home_p1:"Montiablo is the economic engine of our nation, home to innovators, small businesses, and major financial institutions. Our citizens are currently held back by a sluggish and unaccountable bureaucracy that stifles growth and punishes enterprise.",home_p2:"A governors true power lies in ensuring the government works efficiently for the people. We are running to restore accountability, protect civil liberties, and ensure that Montiablo remains a place where hard work is rewarded.",home_btn_primary:"Endorse",home_btn_secondary:"Read Platform",plat_title:"The FDP Mandate",plat_0_h:"Fiscal Discipline",plat_0_p:"Montiablo deserves a government that lives within its means. We will introduce zero new taxes, fees, or levies. Piling debt onto future generations is fundamentally unjust and we commit to balancing the budget.",plat_1_h:"Streamlined Bureaucracy",plat_1_p:"Starting a business must be a straightforward opportunity. We will remove all unnecessary administrative hurdles and guarantee a thirty-day maximum turnaround for standard business permits. If the administration fails to meet this deadline, the permit will be granted automatically.",plat_2_h:"Uncompromising Transparency",plat_2_p:"Government operates best in the light. We will install live permit processing queue screens in all public administration halls and publish real-time figures online every month. The administration will be held directly accountable to the public for its performance.",plat_3_h:"Civil Liberties and Privacy",plat_3_p:"A free society requires strict boundaries on government surveillance. We will block any municipal program that collects blanket citizen data without a transparent purpose, a strict end date, and rigorous independent oversight.",plat_4_h:"Economic Empowerment",plat_4_p:"Hard work must be rewarded. While income tax remains a federal issue, we will use every tool at our disposal to advocate for significant relief for middle-income earners. The wealth generated in Montiablo belongs to the people who create it.",plat_5_h:"Efficient Core Services",plat_5_p:"We will ensure that rigorous reviews for safety, health, and environmental standards remain intact while stripping away redundant red tape. Our administration will focus entirely on delivering essential services efficiently and effectively.",record_title:"Campaign Priorities",record_0_h:"Balancing the Budget",record_0_p:"Montiablo deserves a government that lives within its means. We will introduce zero new taxes, fees, or levies. Piling debt onto future generations is fundamentally unjust and we commit to balancing the budget.",record_1_h:"Cutting Red Tape",record_1_p:"Starting a business must be a straightforward opportunity. We will remove all unnecessary administrative hurdles and guarantee a thirty-day maximum turnaround for standard business permits. If the administration fails to meet this deadline, the permit will be granted automatically.",record_2_h:"Public Accountability",record_2_p:"Government operates best in the light. We will install live permit processing queue screens in all public administration halls and publish real-time figures online every month. The administration will be held directly accountable to the public for its performance.",record_3_h:"Protecting Privacy",record_3_p:"A free society requires strict boundaries on government surveillance. We will block any municipal program that collects blanket citizen data without a transparent purpose, a strict end date, and rigorous independent oversight.",record_4_h:"Rewarding Enterprise",record_4_p:"Hard work must be rewarded. While income tax remains a federal issue, we will use every tool at our disposal to advocate for significant relief for middle-income earners. The wealth generated in Montiablo belongs to the people who create it.",record_5_h:"Focused Administration",record_5_p:"We will ensure that rigorous reviews for safety, health, and environmental standards remain intact while stripping away redundant red tape. Our administration will focus entirely on delivering essential services efficiently and effectively.",record_6_h:"Restoring Trust",record_6_p:"A governors true power lies in ensuring the government works efficiently for the people. We are running to restore accountability, protect civil liberties, and ensure that Montiablo remains a place where hard work is rewarded.",events_title:"Official Schedule",events_1_date:"SEP 12",events_1_h:"Montiablo Chamber of Commerce",events_1_p:"Guido Westerwelle outlines his plan to streamline business permits and cut red tape for local entrepreneurs.",events_2_date:"SEP 18",events_2_h:"Townhall on Civic Transparency",events_2_p:"A public forum discussing new measures for holding the administration accountable and displaying real-time metrics.",events_3_date:"OCT 05",events_3_h:"Rally for Economic Empowerment",events_3_p:"Join us as we campaign for middle-income tax relief and fiscal responsibility in Montiablo.",about_title:"Candidate Dossier",about_h:"A Vision for Montiablo",about_p1:"Guido Westerwelle has spent his career fighting for a government that serves its people efficiently. He believes that the true measure of our capital is found in the success of its small businesses and the freedom of its citizens.",about_p2:"His campaign is built on the fundamental principle that government should be transparent, accountable, and limited in its interference. He envisions a Montiablo where hard work is rewarded and civil liberties are fiercely protected.",about_p3:"With a commitment to zero new taxes and a thirty-day guarantee on business permits, Westerwelle is prepared to bring real reform to the governors office.",about_p4:"FDP Official Campaign Dossier",join_title:"Get Involved Today",join_sub:"Join the movement to restore efficiency and freedom in Montiablo.",join_p:"Whether you want to knock on doors, make phone calls, or help organize local events, your effort will directly impact our success.",join_name:"Full Name",join_email:"Email Address",join_affil:"Local Affiliation (Optional)",join_btn:"Sign Up"}};let c="en";const m=`
   <div class="watermark-scatter" style="top: 15%; left: -2%; transform: rotate(-90deg);">WESTERWELLE</div>
   <div class="watermark-scatter" style="top: 10%; right: 5%;">MONTIABLO</div>
   <div class="watermark-scatter" style="top: 35%; left: 20%;">FDP</div>
@@ -96,10 +20,7 @@ const shellHTML = `
     </nav>
   </header>
   <main id="page-content" class="page-container"></main>
-`;
-
-const pages = {
-  home: `
+`,o={home:`
     <div class="newspaper-grid">
       <!-- Left/Main Column: Lead Story -->
       <article class="lead-story">
@@ -148,8 +69,7 @@ const pages = {
         </article>
       </div>
     </div>
-  `,
-  record: `
+  `,record:`
     <div class="section-wrapper">
       <span class="micro text-yellow" style="display: FDPk; margin-bottom: 1rem;">// PRIOR VICTORIES</span>
       <h2 class="title-section" style="margin-bottom: 4rem;"><span data-i18n="record_title">Completed Mandates</span></h2>
@@ -199,8 +119,7 @@ const pages = {
         </div>
       </div>
     </div>
-  `,
-  platform: `
+  `,platform:`
     <div class="section-wrapper">
       <span class="micro text-yellow" style="display: FDPk; margin-bottom: 1rem;">// THE MANDATE</span>
       <h2 class="title-section" style="margin-bottom: 4rem;"><span data-i18n="plat_title">Lorem Ipsum Dolor</span></h2>
@@ -238,8 +157,7 @@ const pages = {
         </div>
       </div>
     </div>
-  `,
-  events: `
+  `,events:`
     <div class="section-wrapper">
       <span class="micro" style="display: FDPk; margin-bottom: 1rem;">// SCHEDULE</span>
       <h2 class="title-section"><span data-i18n="events_title">Official Schedule</span></h2>
@@ -271,8 +189,7 @@ const pages = {
         </div>
       </div>
     </div>
-  `,
-  about: `
+  `,about:`
     <div class="section-wrapper">
       <div class="flex-split reverse">
         <div style="flex: 1;">
@@ -291,8 +208,7 @@ const pages = {
         </div>
       </div>
     </div>
-  `,
-  join: `
+  `,join:`
     <div class="section-wrapper">
       <div class="flex-split">
         <div style="flex: 1; padding-right: 4rem;">
@@ -312,76 +228,4 @@ const pages = {
         </div>
       </div>
     </div>
-  `
-};
-
-function initApp() {
-  document.getElementById('app').innerHTML = shellHTML;
-  window.addEventListener('hashchange', handleRoute);
-
-  if (!window.location.hash) {
-    window.location.hash = '#home';
-  } else {
-    handleRoute();
-  }
-}
-
-function handleRoute() {
-  let hash = window.location.hash.substring(1) || 'home';
-  if (!pages[hash]) hash = 'home';
-
-  document.getElementById('page-content').innerHTML = pages[hash];
-
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.classList.toggle('active', link.dataset.page === hash);
-  });
-
-  applyTranslations();
-  if (hash === 'record') attachRecordListeners();
-  if (hash === 'join') attachJoinListeners();
-  window.scrollTo(0, 0);
-}
-
-
-function attachJoinListeners() {
-  const form = document.getElementById("join-form");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      form.innerHTML = "<h3 style='color: var(--color-yellow); font-size: 2rem;'>Thank you for signing up!</h3><p style='font-size: 1.25rem; margin-top: 1rem;'>We will be in touch with you shortly.</p>";
-    });
-  }
-}
-
-function attachRecordListeners() {
-  document.querySelectorAll('.record-row').forEach(row => {
-    row.addEventListener('mouseenter', () => {
-      row.classList.add('checked-off');
-    });
-  });
-}
-
-function applyTranslations() {
-  const t = dict[currentLang];
-  if (!t) return;
-
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (t[key]) el.innerHTML = t[key];
-  });
-
-  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-    const key = el.getAttribute('data-i18n-placeholder');
-    if (t[key]) el.setAttribute('placeholder', t[key]);
-  });
-}
-
-window.navigate = (page) => {
-  window.location.hash = '#' + page;
-};
-
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initApp);
-} else {
-  initApp();
-}
+  `};function l(){document.getElementById("app").innerHTML=m,window.addEventListener("hashchange",d),window.location.hash?d():window.location.hash="#home"}function d(){let e=window.location.hash.substring(1)||"home";o[e]||(e="home"),document.getElementById("page-content").innerHTML=o[e],document.querySelectorAll(".nav-link").forEach(a=>{a.classList.toggle("active",a.dataset.page===e)}),u(),e==="record"&&f(),e==="join"&&h(),window.scrollTo(0,0)}function h(){const e=document.getElementById("join-form");e&&e.addEventListener("submit",a=>{a.preventDefault(),e.innerHTML="<h3 style='color: var(--color-yellow); font-size: 2rem;'>Thank you for signing up!</h3><p style='font-size: 1.25rem; margin-top: 1rem;'>We will be in touch with you shortly.</p>"})}function f(){document.querySelectorAll(".record-row").forEach(e=>{e.addEventListener("mouseenter",()=>{e.classList.add("checked-off")})})}function u(){const e=p[c];e&&(document.querySelectorAll("[data-i18n]").forEach(a=>{const n=a.getAttribute("data-i18n");e[n]&&(a.innerHTML=e[n])}),document.querySelectorAll("[data-i18n-placeholder]").forEach(a=>{const n=a.getAttribute("data-i18n-placeholder");e[n]&&a.setAttribute("placeholder",e[n])}))}window.navigate=e=>{window.location.hash="#"+e};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",l):l();
